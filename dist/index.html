@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <title>SDCM Lookup</title>
+  <script type="module" crossorigin src="/assets/index-c76a3e0b.js"></script>
+  <link rel="stylesheet" href="/assets/index-3824b58f.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>SDCM Lookup</h1>
+
+  </div>
+  <div class="card">
+   
+    <div class="card-header"> Fill in form </div>
+    
+    <div class="card-dody">
+
+      <form class="card-form" id="myForm">
+        <label for="conx">Target X</label>
+        <input type="text" id="conx" name="conx" size="10">
+        <label for="cony">Target Y</label>
+        <input type="text" id="cony" name="cony" size="10">
+        <label for="testx">Test X</label>
+        <input type="text" id="testx" name="testx" size="10">
+        <label for="testy">Test Y</label>
+        <input type="text" id="testy" name="testy" size="10">
+        <label for="sdcm">SDCM</label>
+        <input type="text" id="sdcm" name="sdcm" size="10">
+        
+        <br />
+        <input type="submit" value="Submit">
+
+      </form>
+
+      <div class="card-right">
+        <p>
+          You can use this to compare a target XY color coordinate to a given XY value, to see if it is within your chosen Standard Deviation for Color Measurement (MacAdam Ellipse)
+          The red dot on the plot is the Target and the blue dot is the test color.
+          If the blue dot is within the ellipse, and the SDCM is set to "1", then most people will not see a difference between the two colors.
+        </p>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <div id="xy"></div>
+
+  <div class="footer">
+    <p>By David G for sdcmlookup.com</p>
+  </div>
+  
+
+  <!-- built files will be auto injected -->
+  
+  
+  </body>
+
+</html>
